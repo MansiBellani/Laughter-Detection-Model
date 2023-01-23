@@ -33,7 +33,7 @@ def get_laughter_times_from_annotation_line(line, min_gap=0.0, avoid_edges=True,
     # Merge any overlapping annotations and then convert back to list from tuple
     laughter_segments = dataset_utils.combine_overlapping_regions(laughter_segments, [])
     laughter_segments = [list(s) for s in laughter_segments] 
-        
+
     # Slightly fairer to compare w/ Switchboard if we only take windows for which we see the whole 1 second instead of zero-padding
     # To do this, trim the audio and annotations by 0.5 seconds at start and finish
     trimmed_segments = []
