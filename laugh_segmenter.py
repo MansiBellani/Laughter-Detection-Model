@@ -45,7 +45,7 @@ def lowpass(sig, filter_order = 2, cutoff = 0.01):
     #Apply the filter
     return(signal.filtfilt(B,A, sig))
 
-def get_laughter_instances(probs, threshold = 0.5, min_length = 0.2, fps=100.):
+def get_laughter_instances(probs, threshold = 0.3, min_length = 0.7, fps=100.):
     instances = []
     current_list = []
     for i in range(len(probs)):
