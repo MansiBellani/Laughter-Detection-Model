@@ -45,7 +45,7 @@ def lowpass(sig, filter_order = 2, cutoff = 0.01):
     #Apply the filter
     return(signal.filtfilt(B,A, sig))
 
-def get_laughter_instances(probs, threshold = 0.3, min_length = 0.7, fps=100.):
+def get_laughter_instances(probs, threshold = 0.8, min_length = 0.3, fps=100.):
     instances = []
     current_list = []
     for i in range(len(probs)):
@@ -92,7 +92,7 @@ def format_outputs(instances, wav_paths=None):
             outs.append({'start': instances[i][0], 'end': instances[i][1]})
     return outs
 
-def segment_laugh_with_model(model, input_path, threshold=0.5, min_length=0.1, 
+def segment_laugh_with_model(model, input_path, threshold=0.8, min_length=0.3, 
         use_filter=True, audio_start=None, audio_length=None,
         avoid_edges=False, edge_gap=0.5):
     if audio_start is not None and audio_length is not None:
