@@ -6,5 +6,5 @@ from prediction import predict
 # st.markdown("Toy model to play to classify iris flowers into \
 #setosa, versicolor, virginica")
 
-st.button(“Predict type of Iris”)
+# st.button(“Predict type of Iris”)
 streamlit run app.py
