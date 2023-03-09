@@ -19,7 +19,7 @@ Original file is located at
 
 from google.colab import files #Used to create option that lets user upload the files
 
-import os, sys, pickle, time, librosa, argparse, torch, numpy as np, pandas as pd, scipy
+import os, sys, pickle, time, librosa, argparse, numpy as np, pandas as pd, scipy
 from tqdm import tqdm #Progress bar
 import tgt #Text Grid Tools (Praat)
 sys.path.append('./utils/') #To access the 'utils' directory
