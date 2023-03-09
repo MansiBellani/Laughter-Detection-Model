@@ -15,6 +15,7 @@ Original file is located at
 !pip install pyloudnorm #Algorithms to measure loudness of audio (true peak)
 !pip install praatio==3.8.0 #Time allign with audio transcript.
 !pip install tensorboardX==1.9 #Let's you watch tensors flow without tensorflow
+!pip install torch==1.7.1
 
 from google.colab import files #Used to create option that lets user upload the files
 
