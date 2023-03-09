@@ -1,4 +1,3 @@
-!pip install streamlit
 import streamlit as st
 import pandas as pd
 import numpy as np
@@ -7,5 +6,5 @@ from prediction import predict
  st.markdown('Toy model to play to classify iris flowers into \
 setosa, versicolor, virginica')
 
- st.button(“Predict type of Iris”)
+st.button(“Predict type of Iris”)
 streamlit run app.py
