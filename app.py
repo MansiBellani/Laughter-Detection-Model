@@ -1,5 +1,5 @@
 
-pip install streamlitimport streamlit as st
+pip install streamlit
 import pandas as pd
 import numpy as np
 from prediction import predict
