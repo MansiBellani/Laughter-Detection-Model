@@ -11,6 +11,8 @@ Original file is located at
 !git clone https://github.com/MansiBellani/Laughter-Detection-Model.git
 
 # %cd Laughter-Detection-Model/
+!pip install streamlit
+!streamlit hello
 !pip install tgt #tgt is Text Grid Tools - Read, write, and manipulate Praat TextGrid files
 !pip install pyloudnorm #Algorithms to measure loudness of audio (true peak)
 !pip install praatio==3.8.0 #Time allign with audio transcript.
